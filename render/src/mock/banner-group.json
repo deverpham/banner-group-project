@@ -1,7 +1,7 @@
 {
     "id": 1,
     "name": "Banner Group 1",
-    "width": "350px",
+    "width": "100%",
     "height": "400px",
     "type": "single",
     "responsive": true,
@@ -23,16 +23,54 @@
     "rdbtn_shape": "square",
     "rdbtn_align": "left",
     "rdbtn_color": "black",
-    "banners": [{
-        "id": 1,
-        "enable": true,
-        "name": "Banner 1",
-        "variable_width": "200",
-        "fit_type": "width",
-        "align_type": "top",
-        "slide_link": "link",
-        "target": "https://google.com",
-        "alternate_text": "Here is Banner 1",
-        "image_url": ""
-    }]
+    "banners": [
+        {
+            "id": 1,
+            "enable": true,
+            "name": "Banner 1",
+            "variable_width": "200",
+            "fit_type": "stretch",
+            "align_type": "top",
+            "slide_link": "link",
+            "target": "https://google.com",
+            "alternate_text": "Here is Banner 1",
+            "image_url": "http://demo.bestdnnskins.com/portals/6/innerpage/banner3_04.jpg"
+        },
+        {
+            "id": 2,
+            "enable": true,
+            "name": "Banner 2",
+            "variable_width": "200",
+            "fit_type": "width",
+            "align_type": "top",
+            "slide_link": "link",
+            "target": "https://google.com",
+            "alternate_text": "Here is Banner 1",
+            "image_url": "http://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_64199689--tojpeg_1409138481893_x1.jpg"
+        },
+        {
+            "id": 3,
+            "enable": true,
+            "name": "Banner 3",
+            "variable_width": "200",
+            "fit_type": "width",
+            "align_type": "top",
+            "slide_link": "link",
+            "target": "https://google.com",
+            "alternate_text": "Here is Banner 1",
+            "image_url": "http://www.creditlenders.info/wp-content/uploads/banner-free-pictures-on-pixabay-banner-images.jpg"
+        },
+        {
+            "id": 4,
+            "enable": true,
+            "name": "Banner 4",
+            "variable_width": "200",
+            "fit_type": "width",
+            "align_type": "top",
+            "slide_link": "link",
+            "target": "https://google.com",
+            "alternate_text": "Here is Banner 1",
+            "image_url": "http://drishyamtravels.com/wp-content/uploads/2018/10/travel-destinations-questions-and-answers-about-good-exotic-holiday-locations-great-vacation-top-spots-the-world-sites-family-recommended-ideal-summer-popular-warm-most-beautiful.jpg"
+        }
+    ]
 }
