@@ -1,11 +1,11 @@
 {
     "id": 1,
     "name": "Banner Group 1",
-    "width": "100%",
+    "width": "300px",
     "height": "400px",
     "type": "single",
     "responsive": true,
-    "corner_type": "square",
+    "corner_type": "rounded",
     "adaptive_height": "boolean",
     "transitation_type": "instant",
     "variable_width": true,

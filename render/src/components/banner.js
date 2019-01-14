@@ -20,11 +20,10 @@ export default class Banner extends React.Component {
             }
             case SLIDE_LINK.LINK: {
                 return (
-                    <div >
-                        <img src={this.props.data.image_url} style={{
-                            width: '100%',
-                            height: 'auto'
-                        }}></img>
+                    <div style={{
+                        height: '100%'
+                    }}>
+                        <img src={this.props.data.image_url} className='banner_image'></img>
                     </div>
                 )
             }

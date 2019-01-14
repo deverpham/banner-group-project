@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
 import Banner from '../components/banner';
+const BannerGroupStyle = require('./banner_group.style');
+const bannerGroupVar = require('./banner_group.var');
 class Container extends React.Component {
   constructor(props) {
     super(props);
@@ -32,12 +34,26 @@ class Container extends React.Component {
       banner_detail: data
     });
   }
+  getBannerStyle() {
+    const bannerStyle = new BannerGroupStyle(this.props.data);
+    return bannerStyle.export();
+  }
+  getClass() {
+    switch (this.props.data.corner_type) {
+      case bannerGroupVar.CORNER_TYPE.ROUNDED: {
+        return 'rounded'
+      }
+      case bannerGroupVar.CORNER_TYPE.SUPER_ROUND: {
+        return 'super_round'
+      }
+      default: {
+        return 'square'
+      }
+    }
+  }
   render() {
     return (
-      <div id={this.state.banner_detail.id} className='slider_wrapper' style={{
-        height: this.state.banner_detail.height,
-        width: this.state.banner_detail.width
-      }}>
+      <div id={this.state.banner_detail.id} className={'slider_wrapper ' + this.getClass()} style={this.getBannerStyle()}>
         <Slider {...this.state.settings} >
           {this.state.banner_detail.banners.map(banner => <Banner key={banner.id} data={banner} />)}
         </Slider>
