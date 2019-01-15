@@ -1,11 +1,12 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-module.exports = function(env, argv) {
+module.exports = function (env, argv) {
   return {
     entry: {
       vendor: path.join(__dirname, "./src/vendor.js"),
-      index: path.join(__dirname, "./src/index.js")
+      index: path.join(__dirname, "./src/index.js"),
+      interface: path.join(__dirname, './src/interface/index.js')
     },
     output: {
       filename: "[name].js",
